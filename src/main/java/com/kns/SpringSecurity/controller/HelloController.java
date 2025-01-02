@@ -10,6 +10,7 @@ public class HelloController {
    /* public String message() {
         return "Sreerama Rama Rama";
     }**/
+    //getting session id by sending HttpServletRequest as parameter
     public String message(HttpServletRequest request) {
         return "Sreerama Rama Rama " + request.getSession().getId();
     }
